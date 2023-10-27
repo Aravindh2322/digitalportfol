@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #00788d;
+    color: #6ce6f7;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+    text-align: left;
+}
+
+#home {
+    background-color: #bceef7;
+}
+
+#about {
+    background-color: #cdfad1;
+}
+
+#skills {
+    background-color: #dbf7d1;
+}
+
+#education {
+    background-color: #f5f2c8;
+}
+
+#contact {
+    background-color: #e8d4fa;
+}
+
+    </style>
+    <title>Digital Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Hi! I'am Aravindh. <br>Iam Web Devloper</h1>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <!-- Your about me content goes here -->
+        <h5>Hello! I'm Aravindh, a dedicated individual hailing from the culturally rich town of Uillkkottai.<br> I believe in the power of self-reliance and hard work, which is why I work a part-time job daily to cover my expenses.<br> This sense of independence has shaped my strong work ethic and taught me the value of financial responsibility.
+
+        <br><br>Every day, you can find me hitting the gym, where I channel my determination and discipline into physical fitness. <br>The gym is not just a place for me to exercise; it's a sanctuary where I push my limits, both mentally and physically.
+
+        <br><br>Beyond my daily routine, I cherish spending quality time with my friends. Exploring the outdoors, sharing laughter, and creating memories together are the moments I hold dear.<br> I strongly believe in the importance of relationships and the joy they bring into our lives.
+
+        <br><br>I find fulfillment in the simple things — a good workout, the company of friends, and the satisfaction of earning my own way.<br> These experiences have shaped my perspective on life, teaching me the value of self-sufficiency and the importance of genuine connections with others.</h5>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <!-- Your skills content goes here -->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>Good in communcation</li>
+        <li>Word and Excel</li>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <li>2024- BCA at SRM Trichy arts and science college</li>
+        <li>2021- 12th at bharathidasan  School</li>
+        <li>2019- 10th at navabharath school </li>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <!-- Your contact form goes here -->
+        Email: aravindhank167@gmail.com
+    
+    </section>
+
+
+         <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click',function(e){
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if(targetElement){
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
